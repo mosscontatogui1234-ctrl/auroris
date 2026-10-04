@@ -1,0 +1,91 @@
+/* Site do Auroris — mesmo visual do programa (verde, dourado, letras Cinzel) */
+@font-face{font-family:'Cinzel Decorative';font-weight:900;font-display:swap;src:url(fontes/cinzel-decorative.woff2) format('woff2')}
+@font-face{font-family:Cinzel;font-weight:600 800;font-display:swap;src:url(fontes/cinzel.woff2) format('woff2')}
+@font-face{font-family:Nunito;font-weight:400 800;font-display:swap;src:url(fontes/nunito.woff2) format('woff2')}
+@font-face{font-family:Nunito;font-style:italic;font-weight:400;font-display:swap;src:url(fontes/nunito-italico.woff2) format('woff2')}
+:root{
+  --fundo:#08120d;--fundo-2:#0e2117;--cartao:#10231a;--cartao-2:#163024;--borda:#284a39;--borda-forte:#3d6b52;
+  --texto:#eef3e6;--suave:#a3baa8;--ouro:#d9b55a;--ouro-claro:#f0d88e;--ouro-escuro:#8c7030;--verde:#4fbf6a;--verde-claro:#7fe39a;
+  --op:#c8102e;--dh:#7a6bd6;--pf:#d4a24c;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;color-scheme:dark}
+body{margin:0;background:var(--fundo);color:var(--texto);font:17px/1.65 Nunito,'Segoe UI',sans-serif;
+  background-image:radial-gradient(ellipse 80% 50% at 50% -10%,rgba(79,191,106,.22),transparent 65%),radial-gradient(ellipse 60% 40% at 100% 40%,rgba(217,181,90,.08),transparent 70%);background-repeat:no-repeat}
+a{color:var(--ouro-claro)}
+img{max-width:100%;display:block}
+.largura{width:min(1120px,100% - 40px);margin:0 auto}
+h2{font-family:Cinzel,serif;font-weight:700;font-size:clamp(26px,4vw,36px);letter-spacing:.06em;text-transform:uppercase;color:var(--ouro-claro);margin:0 0 10px;text-align:center}
+.sub{color:var(--suave);text-align:center;max-width:680px;margin:0 auto 40px}
+section{padding:80px 0}
+.ornamento{display:flex;align-items:center;justify-content:center;gap:10px;margin:0 auto 18px}
+.ornamento i{width:60px;height:1.5px;background:linear-gradient(90deg,transparent,var(--ouro))}
+.ornamento i:last-child{background:linear-gradient(90deg,var(--ouro),transparent)}
+.ornamento b{width:8px;height:8px;transform:rotate(45deg);background:var(--ouro)}
+
+/* ---------- Topo ---------- */
+.capa{min-height:92vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:60px 20px 40px;position:relative}
+.d20{width:min(170px,40vw);height:auto;fill:var(--ouro);filter:drop-shadow(0 0 26px rgba(217,181,90,.55));animation:respira 5s ease-in-out infinite}
+@keyframes respira{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-6px) rotate(4deg)}}
+.logo{font-family:'Cinzel Decorative',Cinzel,serif;font-weight:900;font-size:clamp(46px,10vw,104px);letter-spacing:.12em;margin:22px 0 4px;display:inline-flex;align-items:baseline;line-height:1;
+  filter:drop-shadow(0 2px 0 #3d2c0a) drop-shadow(0 0 22px rgba(217,181,90,.35))}
+.logo .t{background:linear-gradient(180deg,#fff4cf,var(--ouro-claro) 30%,var(--ouro) 58%,var(--ouro-escuro));-webkit-background-clip:text;background-clip:text;color:transparent}
+.logo svg{width:.811em;height:1.2em;margin-left:-.12em;overflow:visible;position:relative;top:.2em}
+.lema{font-family:Cinzel,serif;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--suave);font-size:clamp(12px,1.8vw,15px);margin:6px 0 22px}
+.chamada{font-size:clamp(17px,2.2vw,21px);max-width:640px;margin:0 auto 34px;color:#d6e3d6}
+.sistemas{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:38px}
+.sistemas span{border:1px solid var(--borda-forte);border-radius:99px;padding:5px 16px;font-weight:700;font-size:14px;background:rgba(255,255,255,.03)}
+.sistemas span::before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:8px;background:var(--c)}
+.botao-baixar{display:inline-flex;align-items:center;gap:14px;text-decoration:none;color:#0b1a10;font-weight:800;font-size:20px;
+  padding:16px 34px;border-radius:16px;border:2px solid var(--ouro);background:linear-gradient(180deg,var(--verde-claro),var(--verde) 60%,#2f8f4a);
+  box-shadow:0 10px 30px rgba(79,191,106,.35),inset 0 1px 0 rgba(255,255,255,.4);transition:transform .15s,box-shadow .15s}
+.botao-baixar:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(79,191,106,.5),inset 0 1px 0 rgba(255,255,255,.4)}
+.botao-baixar svg{width:26px;height:26px}
+.botao-baixar small{display:block;font-size:12.5px;font-weight:700;opacity:.75}
+.info-baixar{margin-top:14px;color:var(--suave);font-size:14px}
+.info-baixar a{color:var(--suave)}
+.rolar{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);color:var(--suave);text-decoration:none;font-size:13px;letter-spacing:.2em;text-transform:uppercase}
+
+/* ---------- Recursos ---------- */
+.recursos{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.recurso{background:linear-gradient(180deg,var(--cartao-2),var(--cartao));border:1px solid var(--borda);border-radius:18px;padding:24px 24px 20px;position:relative;overflow:hidden}
+.recurso::before{content:"";position:absolute;left:24px;right:24px;top:0;height:2px;background:linear-gradient(90deg,transparent,var(--ouro),transparent);opacity:.6}
+.recurso .ic{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:rgba(217,181,90,.1);border:1px solid var(--ouro-escuro);margin-bottom:14px}
+.recurso .ic svg{width:28px;height:28px;fill:none;stroke:var(--ouro);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.recurso h3{font-family:Cinzel,serif;font-size:19px;letter-spacing:.06em;text-transform:uppercase;margin:0 0 8px;color:var(--texto)}
+.recurso p{margin:0;color:var(--suave);font-size:15.5px}
+
+/* ---------- Telas ---------- */
+.galeria{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:20px}
+.galeria figure{margin:0;background:var(--cartao);border:1px solid var(--borda);border-radius:14px;overflow:hidden;cursor:zoom-in;transition:transform .2s,border-color .2s}
+.galeria figure:hover{transform:translateY(-3px);border-color:var(--ouro-escuro)}
+.galeria figcaption{padding:10px 14px;color:var(--suave);font-size:14.5px}
+.galeria figcaption b{color:var(--texto)}
+.ampliada{position:fixed;inset:0;z-index:50;background:rgba(3,8,5,.92);display:none;align-items:center;justify-content:center;padding:30px;cursor:zoom-out}
+.ampliada.aberta{display:flex}
+.ampliada img{max-height:100%;border-radius:10px;box-shadow:0 20px 80px rgba(0,0,0,.7)}
+
+/* ---------- Como instalar ---------- */
+.passos{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;counter-reset:passo}
+.passo{background:var(--cartao);border:1px solid var(--borda);border-radius:16px;padding:22px;position:relative}
+.passo::before{counter-increment:passo;content:counter(passo);position:absolute;top:-16px;left:20px;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;
+  background:var(--ouro);color:#1a1406;font-family:Cinzel,serif;font-weight:800}
+.passo h3{font-size:17px;margin:8px 0 6px}
+.passo p{margin:0;color:var(--suave);font-size:15px}
+.aviso{margin-top:24px;background:rgba(217,181,90,.08);border:1px dashed var(--ouro-escuro);border-radius:14px;padding:16px 20px;color:#dfe9dc;font-size:15.5px}
+.aviso b{color:var(--ouro-claro)}
+
+/* ---------- Perguntas ---------- */
+.perguntas{max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:10px}
+.perguntas details{background:var(--cartao);border:1px solid var(--borda);border-radius:14px;padding:4px 20px}
+.perguntas summary{cursor:pointer;font-weight:800;padding:12px 0;list-style:none;display:flex;justify-content:space-between;gap:10px}
+.perguntas summary::after{content:"+";color:var(--ouro);font-size:22px;line-height:1}
+.perguntas details[open] summary::after{content:"−"}
+.perguntas details p{margin:0 0 14px;color:var(--suave)}
+
+/* ---------- Rodapé ---------- */
+footer{border-top:1px solid var(--borda);padding:40px 0 50px;color:var(--suave);font-size:13.5px}
+footer .creditos{display:grid;gap:6px}
+footer .feito{margin-top:18px;text-align:center;font-family:Cinzel,serif;letter-spacing:.14em;text-transform:uppercase;font-size:12px}
+@media (prefers-reduced-motion:reduce){.d20{animation:none}html{scroll-behavior:auto}}
+@media (max-width:600px){section{padding:56px 0}.galeria{grid-template-columns:1fr}}
