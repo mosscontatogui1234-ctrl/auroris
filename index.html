@@ -14,6 +14,7 @@
 <meta name="theme-color" content="#0b1912">
 <link rel="icon" href="imagens/icone.png">
 <link rel="stylesheet" href="estilo.css">
+<script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -26,37 +27,40 @@
 </svg>
 
 <header class="capa">
-  <svg class="d20" aria-hidden="true"><use href="#selo"/></svg>
-  <h1 class="logo" aria-label="Auroris"><span class="t" aria-hidden="true">AURORI</span><svg aria-hidden="true"><use href="#s-dragao"/></svg></h1>
-  <div class="ornamento" aria-hidden="true"><i></i><b></b><i></i></div>
-  <p class="lema">Campanhas · Fichas · Bestiário</p>
-  <p class="chamada">O caderno do mestre e do jogador: suas campanhas, fichas com as contas feitas sozinhas, criaturas e dados — tudo num programa só.</p>
-  <div class="sistemas"><span style="--c:var(--dh)">Daggerheart</span><span style="--c:var(--op)">Ordem Paranormal</span><span style="--c:var(--pf)">Pathfinder 2e</span></div>
-  <a class="botao-baixar" href="https://github.com/mosscontatogui1234-ctrl/auroris/releases/latest/download/Instalar-Auroris.exe">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M6 10l6 6 6-6M4 20h16"/></svg>
-    <span>Baixar para Windows<small>versão 2.0.2 · 106 MB</small></span>
-  </a>
-  <p class="info-baixar">Windows 10 e 11 · grátis · <a href="#instalar">como instalar</a></p>
-  <a class="rolar" href="#recursos">conheça ↓</a>
+  <div class="dado"><svg class="d20" aria-hidden="true"><use href="#selo"/></svg></div>
+
+  <h1 class="logo entra" style="--d:.35s" aria-label="Auroris"><span class="t" aria-hidden="true">AURORI</span><svg aria-hidden="true"><use href="#s-dragao"/></svg></h1>
+  <div class="ornamento entra" style="--d:.55s" aria-hidden="true"><i></i><b></b><i></i></div>
+  <p class="lema entra" style="--d:.65s">Campanhas · Fichas · Bestiário</p>
+  <p class="chamada entra" style="--d:.8s">O caderno do mestre e do jogador: suas campanhas, fichas com as contas feitas sozinhas, criaturas e dados — tudo num programa só.</p>
+  <div class="sistemas entra" style="--d:.95s"><span style="--c:var(--dh)">Daggerheart</span><span style="--c:var(--op)">Ordem Paranormal</span><span style="--c:var(--pf)">Pathfinder 2e</span></div>
+  <div class="entra" style="--d:1.1s">
+    <a class="botao-baixar" href="https://github.com/mosscontatogui1234-ctrl/auroris/releases/latest/download/Instalar-Auroris.exe">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M6 10l6 6 6-6M4 20h16"/></svg>
+      <span>Baixar para Windows<small>versão 2.0.2 · 106 MB</small></span>
+    </a>
+    <p class="info-baixar">Windows 10 e 11 · grátis · <a href="#instalar">como instalar</a></p>
+  </div>
+  <a class="rolar entra" style="--d:1.4s" href="#recursos"><span>conheça</span><i aria-hidden="true"></i></a>
 </header>
 
 <section id="recursos">
   <div class="largura">
-    <div class="ornamento" aria-hidden="true"><i></i><b></b><i></i></div>
-    <h2>O que tem no Auroris</h2>
-    <p class="sub">Feito para quem mestra e para quem joga, com a cara de um grimório.</p>
+    <div class="ornamento surge" aria-hidden="true"><i></i><b></b><i></i></div>
+    <h2 class="surge">O que tem no Auroris</h2>
+    <p class="sub surge">Feito para quem mestra e para quem joga, com a cara de um grimório.</p>
     <div class="recursos">
-      <article class="recurso"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 6c-2-1.5-5-1.8-8-1v14c3-.8 6-.5 8 1M12 6c2-1.5 5-1.8 8-1v14c-3-.8-6-.5-8 1M12 6v14"/></svg></div>
+      <article class="recurso surge"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 6c-2-1.5-5-1.8-8-1v14c3-.8 6-.5 8 1M12 6c2-1.5 5-1.8 8-1v14c-3-.8-6-.5-8 1M12 6v14"/></svg></div>
         <h3>Campanhas</h3><p>Planeje sessões, escreva NPCs, locais, itens e a história do mundo. Ligue páginas com @ (como um wiki) e veja tudo num mapa mental.</p></article>
-      <article class="recurso"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M12 8l1.4 2.9 3.1.4-2.3 2.2.6 3.1-2.8-1.5-2.8 1.5.6-3.1-2.3-2.2 3.1-.4z"/></svg></div>
+      <article class="recurso surge"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M12 8l1.4 2.9 3.1.4-2.3 2.2.6 3.1-2.8-1.5-2.8 1.5.6-3.1-2.3-2.2 3.1-.4z"/></svg></div>
         <h3>Escudo do Mestre</h3><p>Medo, iniciativa, inimigos em cena com vida e ataques, contadores e lembretes. E o Modo Mesa, com o roteiro da sessão à mão.</p></article>
-      <article class="recurso"><div class="ic"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4M9 12h7M9 16h7M9 8h3"/></svg></div>
+      <article class="recurso surge"><div class="ic"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4M9 12h7M9 16h7M9 8h3"/></svg></div>
         <h3>Fichas automáticas</h3><p>Daggerheart, Ordem Paranormal e Pathfinder 2e com as contas feitas sozinhas — e todas as cartas de Daggerheart traduzidas.</p></article>
-      <article class="recurso"><div class="ic"><svg viewBox="0 0 24 24"><path d="M6 9c-1.5-1-2.2-3-2-5 1.5 1.5 3 2.2 5 2.5M18 9c1.5-1 2.2-3 2-5-1.5 1.5-3 2.2-5 2.5"/><path d="M12 6c-3.6 0-6 2.6-6 6 0 2.3 1.2 4 2.5 4.8V20h7v-3.2C16.8 16 18 14.3 18 12c0-3.4-2.4-6-6-6z"/><path d="M9.5 12l1.5.5M14.5 12l-1.5.5"/></svg></div>
+      <article class="recurso surge"><div class="ic"><svg viewBox="0 0 24 24"><path d="M6 9c-1.5-1-2.2-3-2-5 1.5 1.5 3 2.2 5 2.5M18 9c1.5-1 2.2-3 2-5-1.5 1.5-3 2.2-5 2.5"/><path d="M12 6c-3.6 0-6 2.6-6 6 0 2.3 1.2 4 2.5 4.8V20h7v-3.2C16.8 16 18 14.3 18 12c0-3.4-2.4-6-6-6z"/><path d="M9.5 12l1.5.5M14.5 12l-1.5.5"/></svg></div>
         <h3>Bestiário</h3><p>Os 129 adversários oficiais de Daggerheart, traduzidos, e suas próprias ameaças de Ordem Paranormal — prontos para pôr em cena.</p></article>
-      <article class="recurso"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2l8.5 5v10L12 22l-8.5-5V7z"/><path d="M12 7l4.5 8h-9z"/></svg></div>
+      <article class="recurso surge"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2l8.5 5v10L12 22l-8.5-5V7z"/><path d="M12 7l4.5 8h-9z"/></svg></div>
         <h3>Dados e geradores</h3><p>Dualidade de Daggerheart, testes de Ordem e rolagens livres com animação. Geradores de nomes, NPCs, tavernas, criaturas e ganchos.</p></article>
-      <article class="recurso"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 7h6l2 2h10v10H3z"/><path d="M12 12v4M10 14h4"/></svg></div>
+      <article class="recurso surge"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 7h6l2 2h10v10H3z"/><path d="M12 12v4M10 14h4"/></svg></div>
         <h3>Seus dados são seus</h3><p>Tudo fica numa pasta do seu computador (o vault), um arquivo por campanha, ficha e criatura — com cópia automática todo dia.</p></article>
     </div>
   </div>
@@ -64,16 +68,29 @@
 
 <section id="telas">
   <div class="largura">
-    <div class="ornamento" aria-hidden="true"><i></i><b></b><i></i></div>
-    <h2>Por dentro</h2>
-    <p class="sub">Quatro estilos visuais que mudam sozinhos com a campanha: Auroris, Daggerheart, Ordem Paranormal e Pathfinder.</p>
-    <div class="galeria">
-      <figure><img src="imagens/tela-1.jpg" alt="Lista de campanhas" loading="lazy"><figcaption><b>Suas campanhas</b> · e a próxima sessão sempre à vista</figcaption></figure>
-      <figure><img src="imagens/tela-2.jpg" alt="Visão geral de uma campanha" loading="lazy"><figcaption><b>Uma campanha</b> · sessões, NPCs, locais e itens</figcaption></figure>
-      <figure><img src="imagens/tela-3.jpg" alt="Escudo do Mestre" loading="lazy"><figcaption><b>Escudo do Mestre</b> · inimigos, dados e contadores</figcaption></figure>
-      <figure><img src="imagens/tela-4.jpg" alt="Cartas de Daggerheart" loading="lazy"><figcaption><b>Cartas de Daggerheart</b> · todas, traduzidas</figcaption></figure>
-      <figure><img src="imagens/tela-5.jpg" alt="Ficha de criatura" loading="lazy"><figcaption><b>Bestiário</b> · fichas de criaturas e ameaças</figcaption></figure>
-      <figure><img src="imagens/tela-6.jpg" alt="Pesquisa geral" loading="lazy"><figcaption><b>Pesquisa</b> · ache qualquer coisa com Ctrl+K</figcaption></figure>
+    <div class="ornamento surge" aria-hidden="true"><i></i><b></b><i></i></div>
+    <h2 class="surge">Por dentro</h2>
+    <p class="sub surge">Passeie pelas telas do Auroris — elas trocam sozinhas, ou escolha uma aba.</p>
+    <div class="vitrine surge" id="vitrine">
+      <div class="janela">
+        <div class="janela-telas" id="janela-telas" title="Clique para ver grande">
+          <img src="imagens/tela-1.jpg" alt="Lista de campanhas" class="ativa">
+          <img src="imagens/tela-2.jpg" alt="Visão geral de uma campanha" loading="lazy">
+          <img src="imagens/tela-3.jpg" alt="Escudo do Mestre" loading="lazy">
+          <img src="imagens/tela-4.jpg" alt="Cartas de Daggerheart" loading="lazy">
+          <img src="imagens/tela-5.jpg" alt="Ficha de criatura" loading="lazy">
+          <img src="imagens/tela-6.jpg" alt="Pesquisa geral" loading="lazy">
+        </div>
+        <div class="janela-progresso"><i id="progresso"></i></div>
+      </div>
+      <div class="abas" id="abas" role="tablist">
+        <button role="tab" class="ativa"><b>Suas campanhas</b><span>a próxima sessão sempre à vista</span></button>
+        <button role="tab"><b>Uma campanha</b><span>sessões, NPCs, locais e itens</span></button>
+        <button role="tab"><b>Escudo do Mestre</b><span>inimigos, dados e contadores</span></button>
+        <button role="tab"><b>Cartas</b><span>todas as de Daggerheart, traduzidas</span></button>
+        <button role="tab"><b>Bestiário</b><span>fichas de criaturas e ameaças</span></button>
+        <button role="tab"><b>Pesquisa</b><span>ache qualquer coisa com Ctrl+K</span></button>
+      </div>
     </div>
   </div>
   <div class="ampliada" id="ampliada"><img alt=""></div>
@@ -81,30 +98,41 @@
 
 <section id="instalar">
   <div class="largura">
-    <div class="ornamento" aria-hidden="true"><i></i><b></b><i></i></div>
-    <h2>Como instalar</h2>
-    <p class="sub">Leva menos de um minuto.</p>
+    <div class="ornamento surge" aria-hidden="true"><i></i><b></b><i></i></div>
+    <h2 class="surge">Como instalar</h2>
+    <p class="sub surge">Leva menos de um minuto.</p>
     <div class="passos">
-      <div class="passo"><h3>Baixe</h3><p>Clique em <b>Baixar para Windows</b> lá em cima. Vem o arquivo “Instalar-Auroris.exe”.</p></div>
-      <div class="passo"><h3>Abra o instalador</h3><p>Dois cliques no arquivo baixado. Avançar → Instalar → Concluir.</p></div>
-      <div class="passo"><h3>Crie o seu vault</h3><p>Na primeira vez, escolha onde guardar a pasta com suas campanhas, fichas e criaturas.</p></div>
-      <div class="passo"><h3>Para atualizar</h3><p>Baixe a versão nova e instale por cima. Seu vault não é mexido.</p></div>
+      <div class="passo surge"><h3>Baixe</h3><p>Clique em <b>Baixar para Windows</b> lá em cima. Vem o arquivo “Instalar-Auroris.exe”.</p></div>
+      <div class="passo surge"><h3>Abra o instalador</h3><p>Dois cliques no arquivo baixado. Avançar → Instalar → Concluir.</p></div>
+      <div class="passo surge"><h3>Crie o seu vault</h3><p>Na primeira vez, escolha onde guardar a pasta com suas campanhas, fichas e criaturas.</p></div>
+      <div class="passo surge"><h3>Para atualizar</h3><p>Baixe a versão nova e instale por cima. Seu vault não é mexido.</p></div>
     </div>
-    <p class="aviso"><b>“O Windows protegeu o computador”?</b> Clique em <b>Mais informações</b> e depois em <b>Executar assim mesmo</b>. Esse aviso aparece porque o Auroris é feito em casa e não tem a assinatura digital paga que as empresas compram.</p>
+    <p class="aviso surge"><b>“O Windows protegeu o computador”?</b> Clique em <b>Mais informações</b> e depois em <b>Executar assim mesmo</b>. Esse aviso aparece porque o Auroris é feito em casa e não tem a assinatura digital paga que as empresas compram.</p>
   </div>
 </section>
 
 <section id="perguntas">
   <div class="largura">
-    <div class="ornamento" aria-hidden="true"><i></i><b></b><i></i></div>
-    <h2>Perguntas</h2>
+    <div class="ornamento surge" aria-hidden="true"><i></i><b></b><i></i></div>
+    <h2 class="surge">Perguntas</h2>
     <div class="perguntas">
-      <details><summary>É de graça?</summary><p>Sim. O Auroris é feito para jogar com os amigos, sem venda e sem anúncios.</p></details>
-      <details><summary>Onde ficam as minhas campanhas?</summary><p>Numa pasta do seu computador que você escolhe (o vault). Nada vai para a internet. O Auroris guarda sozinho uma cópia de tudo por dia, das últimas duas semanas.</p></details>
-      <details><summary>Como mando uma campanha para um amigo?</summary><p>No Auroris, abra o menu do vault (no topo) → “Abrir a pasta do vault”. Copie o arquivo da campanha, ficha ou criatura e mande. Ele coloca na pasta certa do vault dele e abre o Auroris.</p></details>
-      <details><summary>Funciona no Mac ou no celular?</summary><p>Por enquanto, só no Windows 10 e 11 (64 bits).</p></details>
-      <details><summary>Preciso de internet?</summary><p>Só para baixar. Depois de instalado, o Auroris funciona sem internet.</p></details>
+      <details class="surge"><summary>É de graça?</summary><p>Sim. O Auroris é feito para jogar com os amigos, sem venda e sem anúncios.</p></details>
+      <details class="surge"><summary>Onde ficam as minhas campanhas?</summary><p>Numa pasta do seu computador que você escolhe (o vault). Nada vai para a internet. O Auroris guarda sozinho uma cópia de tudo por dia, das últimas duas semanas.</p></details>
+      <details class="surge"><summary>Como mando uma campanha para um amigo?</summary><p>No Auroris, abra o menu do vault (no topo) → “Abrir a pasta do vault”. Copie o arquivo da campanha, ficha ou criatura e mande. Ele coloca na pasta certa do vault dele e abre o Auroris.</p></details>
+      <details class="surge"><summary>Funciona no Mac ou no celular?</summary><p>Por enquanto, só no Windows 10 e 11 (64 bits).</p></details>
+      <details class="surge"><summary>Preciso de internet?</summary><p>Só para baixar. Depois de instalado, o Auroris funciona sem internet.</p></details>
     </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="largura surge">
+    <svg class="d20 pequeno" aria-hidden="true"><use href="#selo"/></svg>
+    <h2>Pronto para a próxima sessão?</h2>
+    <a class="botao-baixar" href="https://github.com/mosscontatogui1234-ctrl/auroris/releases/latest/download/Instalar-Auroris.exe">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M6 10l6 6 6-6M4 20h16"/></svg>
+      <span>Baixar o Auroris<small>versão 2.0.2 · 106 MB</small></span>
+    </a>
   </div>
 </section>
 
@@ -119,13 +147,6 @@
     <p class="feito">Feito pelo MOSS, para jogar com os amigos</p>
   </div>
 </footer>
-
-<script>
-  // clicar numa foto mostra ela grande
-  const amp = document.getElementById('ampliada'), ampImg = amp.querySelector('img');
-  document.querySelectorAll('.galeria img').forEach(img => img.parentElement.addEventListener('click', () => { ampImg.src = img.src; ampImg.alt = img.alt; amp.classList.add('aberta'); }));
-  amp.addEventListener('click', () => amp.classList.remove('aberta'));
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') amp.classList.remove('aberta'); });
-</script>
+<script src="anima.js"></script>
 </body>
 </html>
