@@ -153,3 +153,6 @@ footer .feito{margin-top:18px;text-align:center;font-family:Cinzel,serif;letter-
   .js .entra,.js .surge{opacity:1;transform:none}
   html{scroll-behavior:auto}
 }
+
+/* etiqueta de novidade nas abas da vitrine */
+.abas .novo{font-style:normal;font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#0b1912;background:var(--ouro);border-radius:99px;padding:1px 7px;margin-left:6px;vertical-align:2px}
